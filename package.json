@@ -1,0 +1,45 @@
+{
+  "name": "weepy",
+  "version": "1.0.0",
+  "description": "WeChat Official Account Admin Node Library",
+  "main": "./lib/index.js",
+  "author": "Chicheng Ren <chicheng.ren1221@gmail.com> (https://github.com/Haloyum)",
+  "contributors":[
+    "Yiting Xiao <catcacy@hotmail.com> (https://github.com/RokaSanae)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "wechat",
+    "node",
+    "npm"
+  ],
+  "scripts": {
+    "test": "cross-env BABEL_ENV=commonjs mocha --require babel-register --recursive -u mocha-lazy-bdd --",
+    "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
+    "test-all": "cross-env BABEL_ENV=commonjs mocha --inspect --debug-brk --require babel-register -u mocha-lazy-bdd"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "debug": "^3.1.0",
+    "sinon": "^4.1.1",
+    "superagent": "^3.6.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.6.1",
+    "cross-env": "^5.1.0",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "mocha": "^4.0.1",
+    "mocha-lazy-bdd": "^0.1.2"
+  }
+}
