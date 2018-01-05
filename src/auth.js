@@ -34,14 +34,12 @@ class Auth {
     };
 
     return ajaxGet(TOKEN_AUTH_URL, { params })
-      .then((res) => {
-        const { body } = res;
-
-        if (body && body.errcode) {
-          return Promise.reject(body);
+      .then((data) => {
+        if (data && data.errcode) {
+          return Promise.reject(data);
         }
 
-        return Promise.resolve(body);
+        return Promise.resolve(data);
       });
   }
 }
