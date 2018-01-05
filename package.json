@@ -1,6 +1,6 @@
 {
   "name": "weepy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WeChat Official Account Admin Node Library",
   "main": "./lib/index.js",
   "author": "Chicheng Ren <chicheng.ren1221@gmail.com> (https://github.com/Haloyum)",
@@ -13,6 +13,9 @@
     "node",
     "npm"
   ],
+  "bugs": {
+    "url": "https://github.com/Haloyum/weepy/issues"
+  },
   "scripts": {
     "test": "cross-env BABEL_ENV=commonjs mocha --require babel-register --recursive -u mocha-lazy-bdd --",
     "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
